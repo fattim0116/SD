@@ -1,6 +1,6 @@
 application: tim
 version: 1
-runtime: python2.7
+runtime: python
 api_version: 1
 
 handlers:
