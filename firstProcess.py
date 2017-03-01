@@ -12,7 +12,7 @@ jieba.load_userdict("user_dict.txt")
 query = cgi.FieldStorage()
 urlDetail = query.getvalue('sen','None')
 
-sentence = "%s" %urlDetail
+sentence = "我要一份麥香機"
 _sentence = sentence
 
 ########## Delete repeat words########################
