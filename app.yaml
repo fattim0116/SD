@@ -5,4 +5,4 @@ api_version: 1
 
 handlers:
 - url: /
-  script: firstProcess.py
+  script: test.py
