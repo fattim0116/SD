@@ -3,12 +3,16 @@
 import jieba.analyse
 import re
 import csv
+import cgi
 
 jieba.set_dictionary("dict.txt.big.txt")
 jieba.analyse.set_stop_words("stop_words.txt")
 jieba.load_userdict("user_dict.txt")
 
-sentence = "麥香積一個，麥鄉於三個，賣相機四個"
+query = cgi.FieldStorage()
+urlDetail = query.getvalue('sen','None')
+
+sentence = "%s" %urlDetail
 _sentence = sentence
 
 ########## Delete repeat words########################
